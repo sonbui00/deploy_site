@@ -1,0 +1,20 @@
+{
+    "name": "smartosc/deploy_site",
+    "description": "Deploy test site",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "SonBV",
+            "email": "sonbv@smartosc.com"
+        }
+    ],
+    "require": {
+        "herzult/php-ssh": "v1.1.0"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    }
+}
