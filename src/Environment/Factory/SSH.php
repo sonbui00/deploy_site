@@ -35,4 +35,9 @@ class SSH implements EnvironmentInterface {
         $output = $this->_connection->run($commands);
         return explode("\n", $output);
     }
+
+    public function getTypeConnect()
+    {
+        return 'remote';
+    }
 }
