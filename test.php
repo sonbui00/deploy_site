@@ -37,7 +37,7 @@ App::run();
                     </div>
                 </div>
                 <div class="field">
-                    <button type="submit" class="ui blue submit button">Git</button>
+                    <button type="submit" class="ui blue submit button">Switch branch</button>
                 </div>
             </div>
             <div class="ui error message"></div>
