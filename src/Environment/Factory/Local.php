@@ -23,4 +23,9 @@ class Local implements EnvironmentInterface {
 
         return $output;
     }
+
+    public function getTypeConnect()
+    {
+        return 'local';
+    }
 }

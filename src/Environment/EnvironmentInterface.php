@@ -13,4 +13,6 @@ interface EnvironmentInterface {
 
     public function run($commands);
 
+    public function getTypeConnect();
+
 } 

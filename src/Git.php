@@ -68,6 +68,9 @@ class Git {
 
     protected function execute($commands)
     {
+        if (0 === strpos($commands, 'git')) {
+            $commands = $this->_beforeRunGitCommand($commands);
+        }
         $commands = $this->_changeDir($this->_repositoryPath, $commands);
         return $this->_environment->run($commands);
     }
@@ -96,6 +99,29 @@ class Git {
 
 //            }
         }
+    }
+
+    protected function _beforeRunGitCommand($command)
+    {
+        if ('local' == $this->_environment->getTypeConnect()) {
+            $user = $this->_getUser();
+            if (!empty($user)) {
+                $result = 'sudo -u ' . $user . ' ' . $command;
+            } else {
+                return $command;
+                throw new \Exception('No config user');
+            }
+            return $result;
+        }
+        return $command;
+    }
+
+    protected function _getUser()
+    {
+        if (defined('USERNAME')) {
+            return USERNAME;
+        }
+//        return 'root';
     }
 
 
