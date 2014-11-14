@@ -46,27 +46,27 @@ App::run();
                 <h2 class="ui dividing header">Pull Code and Clear Cache</h2>
                 <div class="inline field">
                     <div class="ui toggle checkbox">
-                        <input type="checkbox" name="clear_cache[]" value="ce18">
+                        <input type="checkbox" name="clear_cache[]" value="ce18" checked>
                         <label>Clear cache in CE18</label>
                     </div>
                 </div>
                 <div class="inline field">
                     <div class="ui toggle checkbox">
-                        <input type="checkbox" name="clear_cache[]" value="ce19">
+                        <input type="checkbox" name="clear_cache[]" value="ce19" checked>
                         <label>Clear cache in CE19</label>
                     </div>
                     <label></label>
                 </div>
                 <div class="inline field">
                     <div class="ui toggle checkbox">
-                        <input type="checkbox" name="clear_cache[]" value="ee13">
-                        <label>Clear cache in EE18</label>
+                        <input type="checkbox" name="clear_cache[]" value="ee13" checked>
+                        <label>Clear cache in EE13</label>
                     </div>
                 </div>
                 <div class="inline field">
                     <div class="ui toggle checkbox">
-                        <input type="checkbox" name="clear_cache[]" value="ee14">
-                        <label>Clear cache in EE19</label>
+                        <input type="checkbox" name="clear_cache[]" value="ee14" checked>
+                        <label>Clear cache in EE14</label>
                     </div>
                 </div>
             <button type="submit" class="ui blue submit button">Update</button>
